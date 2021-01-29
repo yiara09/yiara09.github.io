@@ -9,72 +9,11 @@
 
 
 
-body {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, #e5e5e5, #8281f6, #c1b8c8, #b9e6ff);
-    background-size: 200% 100%;
-    -webkit-animation: Gradient 20s ease infinite;
-    -moz-animation: Gradient 20s ease infinite;
-    animation: Gradient 20s ease infinite;
-    }
-    @-webkit-keyframes Gradient {
-    0% {
-    background-position: 0% 50%
-    }
-    50% {
-    background-position: 100% 50%
-    }
-    100% {
-    background-position: 0% 50%
-    }
-    }
-    @-moz-keyframes Gradient {
-    0% {
-    background-position: 0% 50%
-    }
-    50% {
-    background-position: 100% 50%
-    }
-    100% {
-    background-position: 0% 50%
-    }
-    }
-    @keyframes Gradient {
-    0% {
-    background-position: 0% 50%
-    }
-    50% {
-    background-position: 100% 50%
-    }
-    100% {
-    background-position: 0% 50%
-    }
-    }
-    /* width */
-    ::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
-    }
-    /* Track */
-    ::-webkit-scrollbar-track {
-    background: black;
-    }
-    
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-    background: #FFD40000;
-    }
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-    background: #EA5E0B00;
-    }
-    
-
 
 body, html {
   font-family: helvetica, arial, sans-serif;
   margin: 0px;
+  background-color: #f7b267;
 }
 
 h1 {
@@ -89,10 +28,6 @@ button {
   margin: 10px;
 }
 
-p {
-  background-color: rgba(255,255,255,0.7);
-  font-color: black;
-}
 
 code {
   background-color: #00000063;
@@ -214,8 +149,8 @@ body {
 	font-family: "FoundersGrotesk-Light";
 	/*font-family: 'Muli', sans-serif;*/
 	/*font-family: 'Helvetica Neue', Arial, Helvetica, Verdana, sans-serif;*/
-	background: #000!important;
-	color: #000;
+	/* background: #000!important; */
+	color: #eaac8b;
 	line-height: 1.4em;
 	text-align: justify;
 	/* font-weight: 300; */

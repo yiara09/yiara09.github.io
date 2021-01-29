@@ -6,7 +6,6 @@ hydraCanvas.id = "hydraCanvas";
 
 hydra = new Hydra({
   canvas: hydraCanvas,
-  detectAudio: false,
   width: window.innerWidth,
   height: window.innerHeight,
 });
@@ -21,7 +20,7 @@ let initialized = false;
 for(const cb of codeblocks) {
   if(initialized == false) {
     eval(cb.textContent);
-    initialized = true;
+    initialized = false;
   }
 
   var observer = new IntersectionObserver(function (entries) {

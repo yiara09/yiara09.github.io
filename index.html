@@ -32,16 +32,15 @@
 		
 		<!-- <script src="sketch.js" type="text/javascript"></script> -->
 		
-<!-- import the latest version of hydra synth-->
-    <script src="https://unpkg.com/hydra-synth"></script>
-
+		<!-- import the latest version of hydra synth-->
+		<script src="https://unpkg.com/hydra-synth"></script>
 		<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap" rel="stylesheet">
 		
 	</head>
 	<style>
 	/* width */
 	::-webkit-scrollbar {
-	width: 10px;
+	width: 0px;
 	}
 	/* Track */
 	::-webkit-scrollbar-track {
@@ -61,60 +60,57 @@
 	
 	<body class='collect_blog_7 section-4 exhibit-7 format-blog'>
 		<div id='contenu'>
-
-
-    <script>
-      // create a new hydra-synth instance
-      var hydra = new Hydra({
-        canvas: document.getElementById("myCanvas")
-      })
-       
-      // osc(10, 0, 0.8).scale(1,1,()=>window.innerWidth/window.innerHeight).add(noise(1.4, 0.1)).color(-1, 1).out(o0)
-      //shape(99).scale(1,1,()=>window.innerWidth/window.innerHeight).mult(osc(20,0.01,2)).out(o1)
-
-DD=0.01
-b=(o,u,i,y,z)=>o().add(solid(1,1,1),DD).thresh(i*0.2*(z-y)+y,0.0001).luma(0.5,0.0001).color(c(u,i,0),c(u,i,1),c(u,i,2))
-c=(u,i,j)=>{
-  let cc = u.split("/"), cs = cc[cc.length - 1].split("-")
-  return parseInt("0x" + cs[i].substring(2*j, 2+2*j))/255
-}
-colorize=(x,u,y=0,z=1)=>b(x,u,0,y,z).layer(b(x,u,1,y,z)).layer(b(x,u,2,y,z)).layer(b(x,u,3,y,z)).layer(b(x,u,4,y,z))
-
-//url='https://coolors.co/eac8ca-f2d5f8-e6c0e9-bfabcb-8d89a6'
-
-//url='https://coolors.co/564787-dbcbd8-f2fdff-9ad4d6-101935'
-
-url='https://coolors.co/f6bd60-f7ede2-f5cac3-84a59d-f28482'
-
-//url='https://coolors.co/efb0a1-f4afb4-c9b7ad-94a89a-797d81'
-
-//func=()=>
-
-//osc(2, 0, 0.8).add(noise(0.5, 0.02).scale(1,1,()=>window.innerWidth/window.innerHeight)).luma(0.15, 0.1)
- 
-
-func = () =>
-
-osc(5, 0.03, 0.8).add(noise(0.5, 0.01)).luma(0.15, 0.1)
-   
-// .out(o0)
-
-colorize(func, url).out();
-
-
-    </script>
-
+			<script>
+			// create a new hydra-synth instance
+			var hydra = new Hydra({
+			canvas: document.getElementById("myCanvas")
+			})
+			
+			// osc(10, 0, 0.8).scale(1,1,()=>window.innerWidth/window.innerHeight).add(noise(1.4, 0.1)).color(-1, 1).out(o0)
+			//shape(99).scale(1,1,()=>window.innerWidth/window.innerHeight).mult(osc(20,0.01,2)).out(o1)
+			DD=0.01
+			b=(o,u,i,y,z)=>o().add(solid(1,1,1),DD).thresh(i*0.2*(z-y)+y,0.0001).luma(0.5,0.0001).color(c(u,i,0),c(u,i,1),c(u,i,2))
+			c=(u,i,j)=>{
+			let cc = u.split("/"), cs = cc[cc.length - 1].split("-")
+			return parseInt("0x" + cs[i].substring(2*j, 2+2*j))/255
+			}
+			colorize=(x,u,y=0,z=1)=>b(x,u,0,y,z).layer(b(x,u,1,y,z)).layer(b(x,u,2,y,z)).layer(b(x,u,3,y,z)).layer(b(x,u,4,y,z))
+			//url='https://coolors.co/eac8ca-f2d5f8-e6c0e9-bfabcb-8d89a6'
+			//url='https://coolors.co/564787-dbcbd8-f2fdff-9ad4d6-101935'
+			//url='https://coolors.co/f6bd60-f7ede2-f5cac3-84a59d-f28482'
+			url='https://coolors.co/f7b267-f79d65-f4845f-f27059-f25c54'
+			//url='https://coolors.co/efb0a1-f4afb4-c9b7ad-94a89a-797d81'
+			//func=()=>
+			//osc(2, 0, 0.8).add(noise(0.5, 0.02).scale(1,1,()=>window.innerWidth/window.innerHeight)).luma(0.15, 0.1)
+			
+			func = () =>
+			
+			osc(3, 0.06).rotate(0)
+			.add(noise(0.5, -0.01).scale(1,1,()=>window.innerWidth/window.innerHeight))
+			
+			// .out(o0)
+			colorize(func, url).out();
+			</script>
 			<div id='index'>
 				<div class='container'>
 					<ul class='section' id='section_1'>
-						<!-- 				<li id='exhibit_146' class='exhibit_title'><a href='PooyanAlizadeh'>ABOUT</a></li>
-						-->
-						<li id='exhibit_146' class='exhibit_title'><a href='#'>YIARA</a></li>
+						<li id='exhibit_146' class='exhibit_title'><a href='#'><img src="img/yiara-logo2.png">
+						</a></li>
+						<br>	<br>
+						<li id='exhibit_146' class='exhibit_title'><a href='#'>ABOUT</a></li>
 						<br>
+						<li id='exhibit_146' class='exhibit_title'><a href='#'>VISUAL</a></li>
+							<br>
+						<li id='exhibit_146' class='exhibit_title'><a href='#' target="_blank" style = "font-size:14px">Annie Tong Zhou Lafrance</a></li>
+						<li id='exhibit_146' class='exhibit_title'><a href='#' target="_blank" style = "font-size:14px">Caroline Larrosa</a></li>
+						<li id='exhibit_146' class='exhibit_title'><a href='#' target="_blank" style = "font-size:14px">Emery Vanderburgh</a></li>
+
+						<br>
+
+						<li id='exhibit_146' class='exhibit_title'><a href='#'>WRITTEN</a></li>
+						<br>
+						<li id='exhibit_146' class='exhibit_title'><a href='#'>CONTACT</a></li>
 						
-						<li id='exhibit_146' class='exhibit_title'><a href='#' target="_blank" style = "font-size:14px">Social</a></li>
-						
-						<li id='exhibit_146' class='exhibit_title'><a href='#' target="_blank" style = "font-size:14px">Networks</a></li>
 					</ul>
 				</div>
 			</div>
@@ -125,25 +121,24 @@ colorize(func, url).out();
 					<div id='blog'>
 						<div class='entry'>
 							<div id='blog-meta'>
-								<h3>Yiara</h3>
-								<br>
-								<br>
 								
-								<p style = "font-size: 14px;"><i>
-								</i>
-								</p>
-								<br>
 								<p>
+									Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+									Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+									Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
 								</p>
 								
-</div>
-						<div id='closing_layer'></div>
-						<div class="index-toggle"><a id="nav-toggle" href="#"><span></span></a></div>
-					</div>
-					
-					<!-- div class="footer">
-					<img src = "img/footer_hola.png"></img>
-				</div> -->
-			</body>
-			<!-- Mirrored from www.indexhibit.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Mar 2020 21:39:40 GMT -->
-		</html>
+							</div>
+							<div id='closing_layer'></div>
+							<div class="index-toggle"><a id="nav-toggle" href="#"><span></span></a></div>
+						</div>
+						
+						<!-- div class="footer">
+						<img src = "img/footer_hola.png"></img>
+					</div> -->
+				</body>
+				<!-- Mirrored from www.indexhibit.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Mar 2020 21:39:40 GMT -->
+			</html>
