@@ -23,3 +23,12 @@ func = () =>
     .scale(0.992)
     .blend(o0, 2.2)
 colorize(func, url).out();
+
+let toggleLivestream = () => {
+  let livestream = document.getElementsByClassName("livestream")[0];
+  if (livestream.style.display == "block") {
+    livestream.style.display = "none";
+  } else {
+    livestream.style.display = "block";
+  }
+}
