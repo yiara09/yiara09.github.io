@@ -6,6 +6,7 @@
 *
 * There are also some obscure rules in base.css
 */
+
 /* scroll bar */
 /* width */
 ::-webkit-scrollbar {
@@ -352,7 +353,9 @@ h4 { font-size: 16px; margin-bottom: 1em; }
 width: 650px; margin-bottom: 1em; /* line-height: 1.3em; */ text-align: left;}
 #exhibit1 p, code, blockquote { color: #000; font-size: 16px; line-height: 1.5;    font-family: 'Red Hat Text', sans-serif;
 width: 500px; margin-bottom: 1em; /* line-height: 1.3em; */ text-align: left;}
+
 /*voy tirando por el parque lafontaine, esto se vive sin pain*/
+
 #exhibit h3, code, blockquote {
 font-family: "FoundersGrotesk-Light";
 font-weight: 900!important;
@@ -468,6 +471,11 @@ li.active a:visited, li a.active, li span.active, #index ul.section li.active a:
 .container {
     padding: 53px 420px 25px 27px;
     max-width: 600px!important;
+}
+.container2 {
+    padding: 113px 10px 5px 0px;
+    padding-left: 80px;
+    max-width: 1000px!important;
 }
 /* this is where you pad them separately */
 #index .container {     width: 650px!important; }

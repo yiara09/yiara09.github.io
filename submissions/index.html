@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang='en-us'>
+	<head>
+
+		<meta charset='utf-8'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0 user-scalable=yes, minimal-ui" />
+		
+		<title>Yiara Magazine</title>
+
+		<meta name='keywords' content="Yiara Magazine" />
+		<meta name='description' content="" />
+		<meta name='author' content="Yiara" />
+		<meta name='copyright' content="2021" />
+		<meta name='Robots' content="<_" />
+		<meta name='generator' content="Rodrigo Velasco and Laila Chamma'a" />
+		<link rel = "shortcut icon" type="../image/png" href="favicon-32x32.png">
+		<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+		
+		<link rel='alternate' type='application/rss+xml' title='RSS' href='https://www.indexhibit.org:443/xml/' />
+		<!-- Bootstrap Core CSS -->
+		<link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+		<!-- Custom Fonts -->
+		<link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+		<link href="../vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+		
+		<link rel='stylesheet' href='../default/reset.css?v=2.0.0' type='text/css' />
+		<link rel='stylesheet' href='../default/base.css?v=2.0.0' type='text/css' />
+		<link rel='stylesheet' href='../default/style.css?v=2.0.0' type='text/css' />
+		<link rel='stylesheet' href='../default/mobile.css' type='text/css' />
+		
+		<script type='text/javascript' src='../js/jquery.js'></script>
+		<!--
+		<script type='text/javascript' src='js/random_color.js'></script>-->
+		<script type='text/javascript' src='../default/mobile.js'></script>
+		<!--<script type='text/javascript' src='js/colors.js'></script>-->
+		<script src='../default/privacy.js'></script>
+		<!--p5.js-->
+		
+		<script src="../libraries/p5.js"></script>
+		
+		<!-- <script src="sketch.js" type="text/javascript"></script> -->
+		
+		<!-- import the latest version of hydra synth-->
+
+		<script src="https://unpkg.com/hydra-synth"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap" rel="stylesheet">
+		
+	</head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+	
+	<body class='collect_blog_7 section-4 exhibit-7 format-blog'>
+		
+		<div id='contenu'>
+
+			<script>
+
+			var hydra = new Hydra({
+			canvas: document.getElementById("myCanvas")
+			})
+			
+			DD=0.01
+			b=(o,u,i,y,z)=>o().add(solid(1,1,1),DD).thresh(i*0.2*(z-y)+y,0.0001).luma(0.5,0.0001).color(c(u,i,0),c(u,i,1),c(u,i,2))
+			c=(u,i,j)=>{
+			let cc = u.split("/"), cs = cc[cc.length - 1].split("-")
+			return parseInt("0x" + cs[i].substring(2*j, 2+2*j))/255
+			}
+			colorize=(x,u,y=0,z=1)=>b(x,u,0,y,z).layer(b(x,u,1,y,z)).layer(b(x,u,2,y,z)).layer(b(x,u,3,y,z)).layer(b(x,u,4,y,z))
+			
+			url='https://coolors.co/888181-cccccc-a1aca5-f1f0f0-ead25d'
+			
+			func = () =>
+			
+			osc(8, -0.01, 0)
+			.thresh(0.6)
+			.rotate(0)
+			.modulateRotate(osc(4, -0.031, 0), 1.22, 10)
+			//.add(noise(2, -0.1))
+			.modulate(o0, () => 0.4)
+			.scale(1.01)
+			.blend(o0, 0.7)
+			colorize(func, url).out();
+
+			</script>
+
+			<!-- <div id='index'>-->
+			<div class='container2'>
+				<a class="menu-toggle rounded" href="#">
+					<i class="fa fa-bars"></i>
+				</a>
+				<nav id="sidebar-wrapper">
+					<ul class="sidebar-nav">
+						<li class="sidebar-brand">
+							<a class="js-scroll-trigger" href="#"><img src="../img/yiara-logo2.png">
+							</a>
+						</li>
+						
+						<li class="sidebar-nav-item">
+							<a class="js-scroll-trigger" href="../index.html">ABOUT</a>
+						</li>
+						<li class="sidebar-nav-item">
+							<a href="#">SUBMISSIONS</a>
+						</li>
+						<li class="sidebar-nav-item">
+							<a href="#">CONTACT</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div id='exhibit1'>
+														<div class="row">
+  <div class="column" style="background-color:#aaaaaa00;">
+    <h2>Column 1</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#bbbbbb00; padding-top: 210px;">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+		
+						</div>
+							
+							<!-- div class="footer">
+							<img src = "img/footer_hola.png"></img>
+						</div> -->
+					</a>
+					<!-- Bootstrap core JavaScript -->
+					<script src="../vendor/jquery/jquery.min.js"></script>
+					<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+					<!-- Plugin JavaScript -->
+					<script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+					<!-- Custom scripts for this template -->
+					<script src="../js/stylish-portfolio.min.js"></script>
+				</body>
+				
+			</html>
