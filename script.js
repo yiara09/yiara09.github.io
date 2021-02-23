@@ -1,42 +1,34 @@
-let hydra, hydraCanvas;
-hydraCanvas = document.createElement("canvas");
-hydraCanvas.width = window.innerWidth;
-hydraCanvas.height = window.innerHeight;
-hydraCanvas.id = "hydraCanvas";
+var hydra = new Hydra({
+  canvas: document.getElementById("myCanvas")
+})
 
-hydra = new Hydra({
-  canvas: hydraCanvas,
-  width: window.innerWidth,
-  height: window.innerHeight,
-});
-
-document.body.appendChild(hydraCanvas);
-
-
-const codeblocks = document.querySelectorAll("code");
-
-let initialized = false;
-
-for(const cb of codeblocks) {
-  if(initialized == false) {
-    eval(cb.textContent);
-    initialized = false;
-  }
-
-  var observer = new IntersectionObserver(function (entries) {
-    if (entries[0].isIntersecting === true) {
-      // hush();
-      // solid(0,0,0,0).out(o0)
-      // solid(0,0,0,0).out(o1)
-      // solid(0,0,0,0).out(o2)
-      // solid(0,0,0,0).out(o3)
-      render(o0);
-      setTimeout(()=>{
-        eval(cb.textContent)
-      }, 60);
-    }
-  }, { threshold: [0.07] });
-
-  observer.observe(cb);
+DD = 0.01
+b = (o, u, i, y, z) => o().add(solid(1, 1, 1), DD).thresh(i * 0.2 * (z - y) + y, 0.0001).luma(0.5, 0.0001).color(c(u, i, 0), c(u, i, 1), c(u, i, 2))
+c = (u, i, j) => {
+  let cc = u.split("/"), cs = cc[cc.length - 1].split("-")
+  return parseInt("0x" + cs[i].substring(2 * j, 2 + 2 * j)) / 255
 }
-      
+colorize = (x, u, y = 0, z = 1) => b(x, u, 0, y, z).layer(b(x, u, 1, y, z)).layer(b(x, u, 2, y, z)).layer(b(x, u, 3, y, z)).layer(b(x, u, 4, y, z))
+
+url = 'https://coolors.co/a1aca5-f1f0f0-EAD25D-eaafac-f3cfcd'
+
+func = () =>
+
+  osc(12, -0.01, 0)
+    .thresh(0.6)
+    .rotate(0)
+    .modulateRotate(osc(4, -0.031, 0), 1.22, 10)
+    //.add(noise(2, -0.1))
+    .modulate(o0, () => 0.4)
+    .scale(0.992)
+    .blend(o0, 2.2)
+colorize(func, url).out();
+
+let toggleLivestream = () => {
+  let livestream = document.getElementsByClassName("livestream")[0];
+  if (livestream.style.display == "block") {
+    livestream.style.display = "none";
+  } else {
+    livestream.style.display = "block";
+  }
+}
