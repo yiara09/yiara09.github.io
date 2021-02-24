@@ -10,18 +10,29 @@ c = (u, i, j) => {
 }
 colorize = (x, u, y = 0, z = 1) => b(x, u, 0, y, z).layer(b(x, u, 1, y, z)).layer(b(x, u, 2, y, z)).layer(b(x, u, 3, y, z)).layer(b(x, u, 4, y, z))
 
-url = 'https://coolors.co/a1aca5-f1f0f0-EAD25D-eaafac-f3cfcd'
+// url = 'https://coolors.co/a1aca5-f1f0f0-EAD25D-eaafac-f3cfcd'
 
-func = () =>
+url='https://coolors.co/e4e1e1-455c54-e4c52e-d7675d-e7a39d'
+      //url='https://coolors.co/efb0a1-f4afb4-c9b7ad-94a89a-797d81'
+            //url='https://coolors.co/f1f0f0-a1aca5-f1c995-eaafac-f3cfcd'
 
-  osc(12, -0.01, 0)
-    .thresh(0.6)
+
+      func = () =>
+      
+      // osc(4, 0, 0).rotate(1.57).modulate(o1)
+      // osc(8, 0, 0).out(o1)
+
+// osc(4, 0, 0).thresh(8).contrast(3).diff(o1, 5).modulate(o1, () => 0.2).add(noise(2, 0.048).scale(1,1,()=>window.innerWidth/window.innerHeight)).modulate(o0, () => 0.5).scale(1.01)
+
+osc([12, 8].fast(0.1), [0.02, -0.02].fast(0.2), 0)
+    .thresh([0.26, 0.1].fast(0.1)) 
     .rotate(0)
-    .modulateRotate(osc(4, -0.031, 0), 1.22, 10)
+    .modulateRotate(osc([4, 2].fast(0.3), -0.01, 0), 1.22, 10)
     //.add(noise(2, -0.1))
-    .modulate(o0, () => 0.4)
-    .scale(0.992)
-    .blend(o0, 2.2)
+    .modulate(o0, () => 0.4)
+    .scale(0.98)
+    .blend(o0, 0.67)
+
 colorize(func, url).out();
 
 let toggleLivestream = () => {

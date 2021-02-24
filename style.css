@@ -11,8 +11,17 @@
 .button {
     position: fixed;
     top: 120px;
-    right: -45px;
+    right: -65px;
     z-index: 20;
-    background: white;
+    background: #ffffff66;
     transform: rotate(270deg);
 }
+
+.verticalhorizontal {
+    display: table-cell;
+    height: 400px;
+    text-align: center;
+    width: 600px;
+    vertical-align: middle;
+}
+
