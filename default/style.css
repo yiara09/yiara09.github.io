@@ -104,7 +104,7 @@ background: none;
     height: 50px;
     text-align: center;
     color: #fff;
-    background: #D7675DBF;
+    background: #D7675D80;
     line-height: 55px;
     z-index: 999;
 }
@@ -189,13 +189,23 @@ h1 {
 font-style: italic;
 color: #ff0066;
 }
+
 button {
-display: inline-block;
-font-size: 16px;
-padding: 15px;
-margin: 12px;
-border-width: 0px!important;
-background-color: #ffffff00;
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px;
+    margin: 12px;
+    border-width: 0px!important;
+    background-color: #ffffff00;
+}
+
+button-modal {
+    display: inline-block;
+    font-size: 16px;
+    padding-left: 558px;
+    margin: 12px;
+    border-width: 0px!important;
+    background-color: #ffffff00;
 }
 code {
 background-color: #00000063;
@@ -335,7 +345,7 @@ background-color: #fff;
 /* link scheme */
 /* you can customize links further down the page too */
 a:link { text-decoration: none; color: #fff!important; }
-/*a:visited { text-decoration: none; color: #888888; }*/
+a:visited { text-decoration: none; color: #000; }
 a:hover { text-decoration: underline; }
 a:active { text-decoration: none; color: #fff; }
 a img { border: none; }
@@ -355,6 +365,19 @@ h4 { font-size: 16px; margin-bottom: 1em; }
 width: 650px; margin-bottom: 1em; /* line-height: 1.3em; */ text-align: left;}
 #exhibit1 p, code, blockquote { color: #000; font-size: 16px; line-height: 1.5;    font-family: 'Red Hat Text', sans-serif;
 width: 500px; margin-bottom: 1em; /* line-height: 1.3em; */ text-align: left;}
+
+#exhibit2 p, code, blockquote {
+    color: #000;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Red Hat Text', sans-serif;
+    width: 580px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    /* line-height: 1.3em; */
+    text-align: left;
+}
 
 /*voy tirando por el parque lafontaine, esto se vive sin pain*/
 
@@ -475,7 +498,7 @@ li.active a:visited, li a.active, li span.active, #index ul.section li.active a:
     max-width: 600px!important;
 }
 .container2 {
-    padding: 113px 10px 5px 0px;
+    padding: 0px 10px 5px 0px;
     padding-left: 80px;
     max-width: 1000px!important;
 }
