@@ -47,9 +47,9 @@ font-family: "FoundersGrotesk-Light" !important;
 position: absolute;
 font-family: "FoundersGrotesk-Light" !important;
 top: 0;
-width: 0px;
 margin: 0;
 padding: 0;
+margin-left: 10px;
 list-style: none;
 }
 .sidebar-nav li.sidebar-nav-item a {
@@ -305,9 +305,9 @@ src: url("../FoundersGrotesk-Light.otf");
 body {
 font-size: 14px!important;
 font-family: "FoundersGrotesk-Light";
-color: #eaac8b;
+/* color: #eaac8b; */
 line-height: 1.4em;
-text-align: justify;
+/* text-align: justify; */
 /* font-weight: 300; */
 }
 .footer {
@@ -372,7 +372,7 @@ width: 500px; margin-bottom: 1em; /* line-height: 1.3em; */ text-align: left;}
     line-height: 1.5;
     font-family: 'Red Hat Text', sans-serif;
     width: 580px;
-    margin-left: 20px;
+    margin-left: 20px; /*remove?*/
     margin-bottom: 50px;
     margin-top: 0px;
     /* line-height: 1.3em; */
@@ -444,7 +444,7 @@ margin-left: 0px;
 /* think #index .container and #exhibit .container for only padding adjustments */
 #index { width: 250px; background: #EB5F4900; /* line-height: 1.3em; */ }
 #exhibit { margin: 20px 0 0 33%; }
-#exhibit1 { margin: 20px 0 0 45%; }
+#exhibit1 { margin: 20px 0 0 45%; } /*remove?*/
 /* styling the index */
 #index ul { list-style: none; margin: 0; }
 #index ul.section { margin-bottom: 1em; }
@@ -464,11 +464,7 @@ margin-left: 0px;
 #index span.active_section_title a { font-weight: bold; }
 /* active exhibit title parts */
 /* color of active exhibit title link and font-weight */
-li.active a:link, li a.active, li.active a:hover, li a.active, li.active a:active, li a.active,
-li.active a:visited, li a.active, li span.active, #index ul.section li.active a:link,
-#index ul.section li.active a:hover, #index ul.section li.active a:active, #index ul.section li.active a:visited
-{
-}
+
 /* additional #index options */
 #index ul li .password a { /* background: url(../img/locked.gif) right center no-repeat; padding-right: 18px; */ }
 /* the "new" indicator */
@@ -479,17 +475,14 @@ li.active a:visited, li a.active, li span.active, #index ul.section li.active a:
 #index a:link { text-decoration: none; color: #fff!important; }
 #index a:visited { color: #fff!important;  }
 #index a:hover { color: #ffffffBF!important; }
-#index a:active {  }
 /* links styles only for the #exhibit region */
 #exhibit a:link { text-decoration: none; }
 #exhibit a:visited {color: #fff!important;  }
 #exhibit a:hover { text-decoration: none; }
-#exhibit a:active {  }
 /* links styles only for the #exhibit region */
 #exhibit1 a:link { text-decoration: none; }
 #exhibit1 a:visited { color: #fff!important; }
 #exhibit1 a:hover { text-decoration: none; }
-#exhibit1 a:active {  }
 /* links styles just for h1 title of site (your name/logo) */
 #index h1 a { font-weight: normal; text-decoration: none; color: #000; }
 /* this is where you adjust your paddings for #index and #exhibit together */
@@ -504,7 +497,6 @@ li.active a:visited, li a.active, li span.active, #index ul.section li.active a:
 }
 /* this is where you pad them separately */
 #index .container {     width: 650px!important; }
-#exhibit .container {  }
 /* size and style of titles and captions (not mobile though) */
 .captioning { margin-top: 2px; }
 .title { font-size: 0.7em; font-style: italic; line-height: 1.2em; }
