@@ -352,7 +352,15 @@ small { font-size: 9px; }
 code { font-family: monospace; }
 blockquote { padding-left: 9px; }
 /* headings */
-h1 { font-size: 16px; margin-bottom: 1em; font-weight: bold; }
+h1 {font-family: 'Belleza', sans-serif!important;
+font-size: 22px!important;
+text-align: left!important;
+line-height: 10px!important;
+letter-spacing: 0.5px!important;
+margin-top: 10px!important;
+margin-bottom: -5px!important;
+margin-left: 0px!important;
+width: 500px!important;}
 h2 { font-size: 16px; margin-bottom: 1em; font-weight: bold; }
 h3 { font-size: 16px; margin-bottom: 1em; font-weight: bold; }
 h4 { font-size: 16px; margin-bottom: 1em; }

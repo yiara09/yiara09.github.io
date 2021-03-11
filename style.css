@@ -1,3 +1,5 @@
+
+
 .carousel-control.right {
     right: 0;
     left: auto;
@@ -158,7 +160,7 @@
 
 #button-modal {
     font-size: 20px;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 .verticalhorizontal {
@@ -170,8 +172,19 @@
     vertical-align: middle;
 }
 
+.right-corner {
+    position: fixed;
+    bottom: -3%;
+    right: -1%;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+
 #modal {
     position: fixed;
+    max-height: 100%;
+overflow-y: auto;
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.1);
@@ -180,12 +193,24 @@
     width: 100%;
 }
 
+#modal h1, code, blockquote {
+    font-family: 'Belleza', sans-serif!important;
+    font-size: 22px!important;
+    text-align: left!important;
+    line-height: 120px!important;
+    letter-spacing: 0.5px!important;
+    margin-top: -60px!important;
+    margin-bottom: 0px!important;
+    margin-left: 20px!important;
+    width: 500px!important;
+}
+
 .modalcontent {
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #ffffffa1;
+    background: #ffffffBF;
     width: 50%;
     padding: 20px;
     max-width: 700px;

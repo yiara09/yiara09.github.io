@@ -32,10 +32,10 @@ url='https://coolors.co/e4e1e1-455c54-e4c52e-d7675d-e7a39d'
 
 // osc(4, 0, 0).thresh(8).contrast(3).diff(o1, 5).modulate(o1, () => 0.2).add(noise(2, 0.048).scale(1,1,()=>window.innerWidth/window.innerHeight)).modulate(o0, () => 0.5).scale(1.01)
 
-osc([12, 8].fast(0.1), [0.02, -0.02].fast(0.2), 0)
-    .thresh([0.26, 0.1].fast(0.1)) 
-    .rotate(0)
-    .modulateRotate(osc([4, 2].fast(0.3), -0.01, 0), 1.22, 10)
+osc([12, 12].fast(0.1), [0.02, -0.02].fast(0.2), 0)
+    .thresh(0.7) 
+    .rotate([0, 1.57].fast(0.1))
+    .modulateRotate(osc([4, 5].fast(0.3), -0.01, 0), 1.22, 10)
     //.add(noise(2, -0.1))
     .modulate(o0, () => 0.4)
     .scale(0.98)
