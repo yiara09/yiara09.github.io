@@ -20,7 +20,7 @@ colorize = (x, u, y = 0, z = 1) => b(x, u, 0, y, z).layer(b(x, u, 1, y, z)).laye
 
 // url = 'https://coolors.co/a1aca5-f1f0f0-EAD25D-eaafac-f3cfcd'
 
-url='https://coolors.co/dac2a9-ce9123-cae9fc-eaeaea-ffffff'
+url='https://coolors.co/c4d7e6-c4d7e6-c4d7e6-c4d7e6-d1b8a8'
       //url='https://coolors.co/efb0a1-f4afb4-c9b7ad-94a89a-797d81'
             //url='https://coolors.co/f1f0f0-a1aca5-f1c995-eaafac-f3cfcd'
 
@@ -32,14 +32,12 @@ url='https://coolors.co/dac2a9-ce9123-cae9fc-eaeaea-ffffff'
 
 // osc(4, 0, 0).thresh(8).contrast(3).diff(o1, 5).modulate(o1, () => 0.2).add(noise(2, 0.048).scale(1,1,()=>window.innerWidth/window.innerHeight)).modulate(o0, () => 0.5).scale(1.01)
 
-osc(8, 0, 0)
+osc(6, 0, 0)
     .thresh(0.5) 
     .rotate(0)
-    .modulateRotate(osc(4, -0.01, 0), 1.22, 10)
+    .modulateRotate(osc(3, -0.04, 0), 1.22, 10)
     //.add(noise(2, -0.1))
-    .modulate(o0, () => 0.48)
-    .scale(0.99)
-    .blend(o0, 0.67)
+
 
 colorize(func, url).out();
 
