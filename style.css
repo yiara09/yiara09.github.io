@@ -231,3 +231,13 @@ overflow-y: auto;
     background: #e2948d80;
     /* Gecko Browsers */
 }
+
+.translate {
+    display: flex;
+    flex-direction: row-reverse;
+    border: 5px black;
+}
+
+sup {
+    font-size: 10px;
+}
