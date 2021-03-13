@@ -239,3 +239,26 @@ overflow-y: auto;
 sup {
     font-size: 10px;
 }
+
+.background-text {
+    position: absolute;
+    font-size: 35px !important;
+    color:rgba(0, 0, 0, 0.151) !important;
+    top: 1%;
+    left: 10%;
+    transform: rotate(-20deg);
+    width: 70% !important;
+    height: 100vh;
+    z-index: -2 !important;
+}
+.background-text2 {
+    position: absolute;
+    font-size: 35px !important;
+    color:rgba(0, 0, 0, 0.151) !important;
+    top: 70%;
+    right: -40%;
+    transform: rotate(20deg);
+    width: 70% !important;
+    height: 100vh;
+    z-index: -2 !important;
+}
