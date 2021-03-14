@@ -244,24 +244,13 @@ sup {
 
 .background-text {
     position: absolute;
-    font-size: 35px !important;
-    color:rgba(0, 0, 0, 0.151) !important;
-    top: 1%;
-    left: 10%;
-    transform: rotate(-20deg);
+    font-size: 22px !important;
+    line-height: 45px !important;
+    color:rgba(0, 0, 0, 0.3) !important;
+    top: 7%;
+    left: 2%;
+    transform: rotate(0deg);
     width: 70% !important;
     height: 100vh;
     z-index: -2 !important;
-}
-.background-text2 {
-    position: absolute;
-    font-size: 35px !important;
-    color:rgba(0, 0, 0, 0.075) !important;
-    top: 55%;
-    right: 0%;
-    transform: rotate(10deg);
-    height: 100vh;
-    z-index: -2 !important;
-    margin: 0 !important;
-    padding: 0 !important;
 }
