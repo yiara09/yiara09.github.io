@@ -209,7 +209,7 @@ overflow-y: auto;
 
 .modalcontent {
     position: absolute;
-    top: 80%;
+    top: 85%!important;
     left: 50%;
     transform: translate(-50%, -50%);
     background: #ffffffBF;

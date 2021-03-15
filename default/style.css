@@ -199,11 +199,12 @@ button {
 button-modal {
     display: inline-block;
     font-size: 16px;
-    padding-left: 558px;
+    padding-left: 85%;
     margin: 12px;
     border-width: 0px!important;
     background-color: #ffffff00;
 }
+
 code {
 background-color: #00000063;
 font-family: InputMono-Regular;
@@ -341,7 +342,7 @@ background-color: #fff;
 }
 /* link scheme */
 /* you can customize links further down the page too */
-a:link { text-decoration: none; color: #fff!important; }
+a:link { text-decoration: none; color: #000!important; }
 a:visited { text-decoration: none; color: #000; }
 a:hover { text-decoration: underline; }
 a:active { text-decoration: none; color: #fff; }
@@ -376,7 +377,7 @@ width: 500px; margin-bottom: 1em; /* line-height: 1.3em; */ text-align: left;}
     font-size: 16px;
     line-height: 1.5;
     font-family: 'Red Hat Text', sans-serif;
-    width: 610px;
+    width: 573px;
     margin-left: 20px; /*remove?*/
     margin-bottom: 50px;
     margin-top: 0px;
@@ -476,16 +477,16 @@ width: 500px;
 #index ul li sup.new_exhibit:before { color: #0c0; font-weight: bold; text-transform: uppercase; font-size: 8px; vertical-align: top; content: "New"; }
 /* end styling for index */
 /* links styles only for the #index region */
-#index a:link { text-decoration: none; color: #fff!important; }
-#index a:visited { color: #fff!important;  }
+#index a:link { text-decoration: none; color: #000!important; }
+#index a:visited { color: #000!important;  }
 #index a:hover { color: #ffffffBF!important; }
 /* links styles only for the #exhibit region */
 #exhibit a:link { text-decoration: none; }
-#exhibit a:visited {color: #fff!important;  }
+#exhibit a:visited {color: #000!important;  }
 #exhibit a:hover { text-decoration: none; }
 /* links styles only for the #exhibit region */
 #exhibit1 a:link { text-decoration: none; }
-#exhibit1 a:visited { color: #fff!important; }
+#exhibit1 a:visited { color: #000!important; }
 #exhibit1 a:hover { text-decoration: none; }
 /* links styles just for h1 title of site (your name/logo) */
 #index h1 a { font-weight: normal; text-decoration: none; color: #000; }
