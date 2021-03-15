@@ -265,3 +265,14 @@ sup {
     margin: 0 !important;
     padding: 0 !important;
 }
+
+.social {
+    padding: 20px;
+    font-size: 30px !important;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: black !important;
+  }
+  
