@@ -205,6 +205,27 @@ button-modal {
     background-color: #ffffff00;
 }
 
+button-next {
+    display: inline-block;
+    font-size: 14px;
+    min-width: 200px!important;
+    margin-left: 388px!important;
+    margin-top: -20px!important;
+    margin: 55px;
+    background-color: #ffffff00;
+}
+
+button-previous {
+    display: inline-block;
+    font-size: 14px;
+    min-width: 179px!important;
+    margin-left: 0px!important;
+    margin-top: 0;
+    margin: 0px;
+    z-index: 2;
+    background-color: #ffffff00;
+}
+
 code {
 background-color: #00000063;
 font-family: InputMono-Regular;
