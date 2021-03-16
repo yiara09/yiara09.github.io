@@ -284,7 +284,7 @@ sup {
     font-size: 10px;
 }
 
-.background-text {
+/* .background-text {
     position: absolute;
     font-size: 22px !important;
     line-height: 45px !important;
@@ -295,7 +295,32 @@ sup {
     width: 70% !important;
     height: 100vh;
     z-index: -2 !important;
+} */
+
+.background-text {
+    position: absolute;
+    font-size: 22px !important;
+    color:rgba(0, 0, 0, 0.3) !important;
+    top: 1%;
+    left: 10%;
+    transform: rotate(-10deg);
+    width: 70% !important;
+    height: 100vh;
+    z-index: -2 !important;
 }
+.background-text2 {
+    position: absolute;
+    font-size: 22px !important;
+    color:rgba(0, 0, 0, 0.3) !important;
+    top: 45%;
+    right: -7%;
+    transform: rotate(5deg);
+    height: 100vh;
+    z-index: -2 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 
 .social {
     padding: 20px;
