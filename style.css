@@ -1,4 +1,19 @@
+* {
+  box-sizing: border-box;
+}
 
+/* Create two equal columns that floats next to each other */
+.column3 {
+  float: left;
+  width: 50%;
+  padding: 0px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.roww {
+    width: 490px!important;
+}
 
 .carousel-control.right {
     right: 0;
