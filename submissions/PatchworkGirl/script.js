@@ -30,7 +30,7 @@ colorize = (x, u, y = 0, z = 1) =>
 
 // url = 'https://coolors.co/a1aca5-f1f0f0-EAD25D-eaafac-f3cfcd'
 
-url = 'https://coolors.co/eaba38-eaba38-eaba38-eaba38-facfd2';
+url = 'https://coolors.co/FBDBDB-FBDBDB-FBDBDB-F5B98E-F5B98E'
 //url='https://coolors.co/efb0a1-f4afb4-c9b7ad-94a89a-797d81'
 //url='https://coolors.co/f1f0f0-a1aca5-f1c995-eaafac-f3cfcd'
 
