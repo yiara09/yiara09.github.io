@@ -486,7 +486,14 @@ width: 500px;
 /* think #index .container and #exhibit .container for only padding adjustments */
 #index { width: 250px; background: #EB5F4900; /* line-height: 1.3em; */ }
 #exhibit { margin: 20px 0 0 33%; }
-#exhibit1 { margin: 20px 0 0 45%; } /*remove?*/
+#exhibit1 { 
+    margin-top: 30px;
+    display: flex; 
+    width: 90vw !important;
+    flex-direction: row;
+    justify-content: center;
+
+}
 /* styling the index */
 #index ul { list-style: none; margin: 0; }
 #index ul.section { margin-bottom: 1em; }
