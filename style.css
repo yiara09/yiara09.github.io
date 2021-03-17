@@ -337,3 +337,8 @@ audio {
 .socialDiv {
     width: 500px;
 }
+
+#bright {
+    color:rgb(100, 62, 161) !important;
+    text-decoration: underline !important;
+}
