@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+    background-color: white;
+}
+
 /* Create two equal columns that floats next to each other */
 .column3 {
   float: left;
@@ -356,7 +360,7 @@ audio {
 @media only screen and (max-width: 600px) {
     .modalcontent {
         overflow-x: hidden;
-        top: 200% !important;
+        top: 170% !important;
         width: 90%;
     }
     #button-modal {
