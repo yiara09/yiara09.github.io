@@ -551,6 +551,11 @@ width: 500px;
 .container4 {
     padding: 0px 10px 5px 0px;
 }
+.container6 {
+    padding: 53px 420px 25px 27px;
+    max-width: 600px!important;
+    position: relative;
+}
 /* this is where you pad them separately */
 #index .container {     width: 650px!important; }
 /* size and style of titles and captions (not mobile though) */
