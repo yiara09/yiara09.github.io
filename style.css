@@ -101,7 +101,6 @@
 
 .text {
     line-height: 26px;
-
     color: #000000;
     font-family: 'Belleza', sans-serif;
     font-size: 26px;
@@ -142,8 +141,7 @@
 }
 
 .text3 {
-        line-height: 26px;
-
+    line-height: 26px;
     color: #000000;
     font-size: 26px;
     font-family: 'Belleza', sans-serif;
@@ -183,7 +181,6 @@
 }
 
 .livestream {
-    position: relative;
     position: fixed;
     top: 78px;
     right: 42px;
@@ -204,7 +201,6 @@
 
 #button-modal {
     font-size: 20px;
-    margin-left: 20px;
 }
 
 .verticalhorizontal {
@@ -217,18 +213,16 @@
 }
 
 .right-corner {
-    position: fixed;
-    bottom: -3%;
-    right: -1%;
-    height: 100%;
-    width: 100%;
+    position: sticky;
+    top: 2.5%;
+    margin-left: 15px;
     vertical-align: middle;
 }
 
 #modal {
     position: fixed;
     max-height: 100%;
-overflow-y: auto;
+    overflow-y: auto;
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.1);
@@ -254,7 +248,7 @@ overflow-y: auto;
     top: 85%!important;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #ffffffBF;
+    background: #ffffffd5;
     width: 50%;
     padding: 20px;
     max-width: 700px;
@@ -262,6 +256,9 @@ overflow-y: auto;
 
 .modalcontent p {
     margin: auto;
+    display: inline-block;
+    max-width: 100%;
+    word-break: normal;
 }
 
 ::selection {
@@ -283,19 +280,6 @@ overflow-y: auto;
 sup {
     font-size: 10px;
 }
-
-/* .background-text {
-    position: absolute;
-    font-size: 22px !important;
-    line-height: 45px !important;
-    color:rgba(0, 0, 0, 0.3) !important;
-    top: 7%;
-    left: 2%;
-    transform: rotate(0deg);
-    width: 70% !important;
-    height: 100vh;
-    z-index: -2 !important;
-} */
 
 .background-text {
     position: absolute;
@@ -341,4 +325,22 @@ audio {
 #bright {
     color:rgb(100, 62, 161) !important;
     text-decoration: underline !important;
+}
+#exhibit2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+@media only screen and (min-width: 2000px) {
+    .modalcontent {
+        top: 55% !important;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .modalcontent {
+        top: 140% !important;
+        width: 90%;
+    }
 }

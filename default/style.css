@@ -421,6 +421,7 @@ width: 500px; margin-bottom: 1em; /* line-height: 1.3em; */ text-align: left;}
     margin-top: 0px;
     /* line-height: 1.3em; */
     text-align: left;
+    padding-right: 30px;
 }
 
 /*voy tirando por el parque lafontaine, esto se vive sin pain*/
@@ -545,7 +546,10 @@ width: 500px;
 .container2 {
     padding: 0px 10px 5px 0px;
     padding-left: 80px;
-    max-width: 1000px!important;
+    max-width: 1000px !important;
+}
+.container4 {
+    padding: 0px 10px 5px 0px;
 }
 /* this is where you pad them separately */
 #index .container {     width: 650px!important; }
