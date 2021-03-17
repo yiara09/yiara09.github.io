@@ -347,7 +347,16 @@ audio {
 
 @media only screen and (max-width: 600px) {
     .modalcontent {
+        overflow-x: hidden;
         top: 160% !important;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .modalcontent {
+        overflow-x: hidden;
+        top: 260% !important;
         width: 90%;
     }
 }
