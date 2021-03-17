@@ -356,10 +356,10 @@ audio {
 @media only screen and (max-width: 480px) {
     .modalcontent {
         overflow-x: hidden;
-        top: 200% !important;
+        top: 240% !important;
         width: 90%;
     }
     #button-modal {
-        padding-left: 140px;
+        padding-left: 170px;
     }
 }
