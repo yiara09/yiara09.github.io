@@ -407,8 +407,30 @@ h4 { font-size: 16px; margin-bottom: 1em; }
 #index p { margin-bottom: 1em; }
 #exhibit p, code, blockquote { color: #FFFFFFDB; font-size: 16px; line-height: 1.5;    font-family: 'Red Hat Text', sans-serif;
 width: 650px; margin-bottom: 1em; /* line-height: 1.3em; */ text-align: left;}
-#exhibit1 p, code, blockquote { color: #000; font-size: 16px; line-height: 1.5;    font-family: 'Red Hat Text', sans-serif;
-width: 500px; margin-bottom: 1em; /* line-height: 1.3em; */ text-align: left;}
+#exhibit1 p, code, blockquote {
+    color: #000;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Red Hat Text', sans-serif;
+    width: 500px;
+    margin-bottom: 1em;
+    /* line-height: 1.3em; */
+    text-align: left;
+}
+
+#exhibit1 blockquote1 {
+    color: #000;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Red Hat Text', sans-serif;
+    width: 400px;
+    margin-bottom: 1em;
+    /* line-height: 1.3em; */
+    text-align: left;
+}
+
 
 #exhibit2 p, code, blockquote {
     color: #000;
