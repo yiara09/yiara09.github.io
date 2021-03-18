@@ -58,7 +58,7 @@ window.onclick = (e) => {
     var img = e.target;
     var modalImg = document.getElementById('img01');
     modal.style.display = 'block';
-    newSrc = 'img/Yiara_wendy-alexina_everyday ' + img.src.slice(49);
+    newSrc = 'img/Y' + img.src.slice(50);
     modalImg.src = newSrc;
     var span = document.getElementsByClassName('close')[0];
     span.onclick = function () {
