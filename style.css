@@ -282,7 +282,6 @@ blockquote {
   left: 50%;
   transform: translate(-50%, -50%);
   background: #ffffffd5;
-  width: 50%;
   padding: 20px;
   max-width: 700px;
 }
@@ -374,7 +373,7 @@ audio {
 }
 @media only screen and (max-width: 700px) and (min-width: 600px) {
   .modalcontent {
-    top: 140% !important;
+    top: 120% !important;
     width: 90%;
   }
 }
@@ -382,12 +381,12 @@ audio {
 @media only screen and (max-width: 600px) {
   .modalcontent {
     overflow-x: hidden;
-    top: 170% !important;
+    top: 120% !important;
     width: 90%;
   }
-  #button-modal {
+  /* #button-modal {
     padding-left: 170px;
-  }
+  } */
 }
 
 img {
