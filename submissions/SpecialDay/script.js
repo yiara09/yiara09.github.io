@@ -1,9 +1,3 @@
-window.onload = function () {
-  document.getElementById('button').onclick = function () {
-    document.getElementById('modal').style.display = 'none';
-  };
-};
-
 var hydra = new Hydra({
   canvas: document.getElementById('myCanvas'),
   detectAudio: false
