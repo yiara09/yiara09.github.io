@@ -60,7 +60,7 @@ window.onclick = (e) => {
     var img = e.target;
     var modalImg = document.getElementById('img01');
     modal.style.display = 'block';
-    newSrc = 'img/Y' + img.src.slice(54);
+    newSrc = 'img/Y' + img.src.slice(img.src.indexOf('img/') + 5);
     modalImg.src = newSrc;
     var span = document.getElementsByClassName('close')[0];
     span.onclick = function () {
